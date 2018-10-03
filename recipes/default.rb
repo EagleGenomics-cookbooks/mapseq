@@ -15,7 +15,7 @@ end
 
 magic_shell_environment 'PATH' do
   filename 'mapseq'
-  value "$PATH:#{node['mapseq']['install_dir']}"
+  value "$PATH:#{node['mapseq']['dir']}"
 end
 
 magic_shell_environment 'MAPSEQ_VERSION' do
