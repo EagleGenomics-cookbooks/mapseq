@@ -11,20 +11,8 @@ describe command('which mapseq') do
   its('stdout') { should match('mapseq') }
 end
 
-# Check that Mapseq build executable is in the path
-describe command('which mapseq-build') do
-  its('exit_status') { should eq 0 }
-  its('stdout') { should match('mapseq-build') }
-end
-
 # Check that Mapsqe works
 describe command('mapseq --version') do
-  its('exit_status') { should eq 0 }
-  its('stdout') { should match('unreleased') }
-end
-
-# Check that Mapseq-build works
-describe command('mapseq-build --version') do
   its('exit_status') { should eq 0 }
   its('stdout') { should match('unreleased') }
 end
