@@ -5,7 +5,9 @@
 # Copyright:: 2018, Eagle Genomics Ltd, All Rights Reserved.
 
 include_recipe 'apt'
-include_recipe 'build-essential'
+build_essential 'name' do
+  action :install
+end
 include_recipe 'tar'
 
 tar_extract node['mapseq']['download_url'] do
