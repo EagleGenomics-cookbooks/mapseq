@@ -1,4 +1,3 @@
-# # encoding: utf-8
 
 # check that Mapseq folder exists
 describe file('/usr/local/mapseq-1.2.2-linux') do

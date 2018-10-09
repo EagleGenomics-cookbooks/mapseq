@@ -8,7 +8,7 @@ include_recipe 'apt'
 include_recipe 'build-essential'
 include_recipe 'tar'
 
-tar_extract "#{node['mapseq']['download_url']}" do
+tar_extract node['mapseq']['download_url'] do
   target_dir node['mapseq']['install_dir']
   creates node['mapseq']['dir']
 end
