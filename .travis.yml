@@ -13,7 +13,7 @@ branches:
 services: docker
 env:
   matrix:
-  - INSTANCE=default-ubuntu-14.04
+  - INSTANCE=default-ubuntu-1404
 before_script:
 - sudo iptables -L DOCKER || ( echo "DOCKER iptables chain missing" ; sudo iptables
   -N DOCKER )
