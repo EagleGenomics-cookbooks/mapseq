@@ -6,7 +6,7 @@ description 'Installs/Configures mapseq'
 long_description 'Installs/Configures mapseq'
 version '0.1.0'
 supports 'ubuntu', '>= 14.04'
-chef_version '>= 14' if respond_to?(:chef_version)
+chef_version '>= 12' if respond_to?(:chef_version)
 
 issues_url 'https://github.com/EagleGenomics-cookbooks/mapseq/issues'
 source_url 'https://github.com/EagleGenomics-cookbooks/mapseq'
